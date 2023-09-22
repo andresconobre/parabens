@@ -4,6 +4,7 @@ const iframe = document.getElementById("iframe");
 const button = document.querySelector("#button-section button");
 const mainSection = document.querySelector("#main-section");
 const buttonSection = document.querySelector("#button-section");
+const audio = document.querySelector("audio");
 const jsConfetti = new JSConfetti({ canvas });
 const setConfetti = () => {
   jsConfetti.addConfetti({
@@ -30,4 +31,6 @@ button.addEventListener("click", () => {
   buttonSection.classList.add("hidden");
   mainSection.classList.remove("hidden");
   setConfetti()
+  audio.volume = 0.2
+  audio.play()
 });
