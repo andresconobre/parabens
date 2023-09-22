@@ -1,6 +1,9 @@
 const title = document.querySelector("h1");
 const canvas = document.getElementById("canvas");
 const iframe = document.getElementById("iframe");
+const button = document.querySelector("#button-section button");
+const mainSection = document.querySelector("#main-section");
+const buttonSection = document.querySelector("#button-section");
 const jsConfetti = new JSConfetti({ canvas });
 const setConfetti = () => {
   jsConfetti.addConfetti({
@@ -16,9 +19,15 @@ function setTitle() {
 }
 
 setTitle();
-setTimeout(() => {
-  setConfetti();
-}, 500);
+// setTimeout(() => {
+//   setConfetti();
+// }, 500);
 canvas.addEventListener("click", () => {
   setConfetti();
+});
+
+button.addEventListener("click", () => {
+  buttonSection.classList.add("hidden");
+  mainSection.classList.remove("hidden");
+  setConfetti()
 });
