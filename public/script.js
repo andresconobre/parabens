@@ -33,4 +33,5 @@ button.addEventListener("click", () => {
   setConfetti()
   audio.volume = 0.2
   audio.play()
+  audio.loop = true
 });
