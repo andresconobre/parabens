@@ -11,19 +11,23 @@
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.9.0/dist/js-confetti.browser.js"></script>
   </head>
   <body class="bg-stone-900 font-comic">
-    <header class="text-center py-3 absolute w-full top-0 mx-auto">
+      
+      <section id="main-section" class="supports-[height:100dvh]:h-[100dvh] h-screen w-full text-white pb-6 pt-24 hidden">
+        <header class="text-center py-3 absolute w-full top-0 mx-auto">
+            <div class="container">
+                <h1 class="text-3xl text-white font-bold uppercase"></h1>
+            </div>
+        </header>
         <div class="container">
-            <h1 class="text-3xl text-white font-bold uppercase"></h1>
-        </div>
-    </header>
 
-    <section class="supports-[height:100dvh]:h-[100dvh] h-screen w-full text-white pb-6 pt-24">
-        <div class="container">
-            <iframe class="w-full lg:w-1/2 mx-auto z-20 relative" width="560" height="315" src="https://www.youtube.com/embed/P52crWWUnOw?si=o-Omi9TXtqY-ptvV&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
         <div id="text" class="scale-up-center w-10/12 mx-auto pt-20 pb-12">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quam natus adipisci unde eius laudantium ut beatae reprehenderit non assumenda est sit laboriosam asperiores enim, ea consequatur ratione placeat officiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ea quasi hic tempore recusandae, reprehenderit eligendi eveniet cupiditate temporibus ratione, sequi exercitationem repudiandae pariatur iure. Quam eaque rerum aliquam consequuntur!</p>
         </div>
+    </section>
+
+    <section id="button-section" class="relative z-20 grid place-items-center supports-[height:100dvh]:h-[100dvh] h-screen">
+        <button type="button" class="bg-white px-12 py-4 text-center text-xl font-bold rounded-lg scale-up-center">PARABÉNS?</button>
     </section>
 
     <canvas id="canvas" class="absolute top-0 h-screen w-full z-10 cursor-pointer"></canvas>
