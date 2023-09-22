@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./**/*.{html,js}", "./src/**/*.{js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+				comic: ['Comic Neue', 'cursive'],
+			}
+    },
   },
   plugins: [],
 }
