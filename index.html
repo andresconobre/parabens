@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./public/app.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./public/app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.9.0/dist/js-confetti.browser.js"></script>
+  </head>
+  <body>
+    <header class="text-center bg-black py-3">
+      <h1 class="text-3xl text-white font-bold uppercase">Parabéns</h1>
+    </header>
+    <canvas id="canvas" class="absolute top-0 h-screen w-full z-10"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const jsConfetti = new JSConfetti({ canvas });
+      setTimeout(() => {
+        jsConfetti.addConfetti({
+          emojis: ["🎉", "🥳", "🍾", "🎊", "🎈", "🎁", "🪅", "🪩"],
+        });
+      }, 500);
+    </script>
+  </body>
 </html>
