@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PARABÉNS</title>
     <link rel="stylesheet" href="./public/app.css" />
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.9.0/dist/js-confetti.browser.js"></script>
   </head>
-  <body>
-    <header class="text-center bg-black py-3">
-      <h1 class="text-3xl text-white font-bold uppercase">Parabéns</h1>
+  <body class="bg-stone-900">
+    <header class="text-center py-3 absolute w-full top-0 mx-auto">
+        <div class="container">
+            <h1 class="text-3xl text-white font-bold uppercase"></h1>
+        </div>
     </header>
-    <canvas id="canvas" class="absolute top-0 h-screen w-full z-10"></canvas>
-    <script>
-      const canvas = document.getElementById("canvas");
-      const jsConfetti = new JSConfetti({ canvas });
-      setTimeout(() => {
-        jsConfetti.addConfetti({
-          emojis: ["🎉", "🥳", "🍾", "🎊", "🎈", "🎁", "🪅", "🪩"],
-        });
-      }, 500);
-    </script>
+
+    <section class="supports-[height:100dvh]:h-[100dvh] h-screen w-full text-white pb-6 pt-20">
+        <div class="container">
+            <iframe class="w-full lg:w-1/2 mx-auto z-20 relative" width="560" height="315" src="https://www.youtube.com/embed/P52crWWUnOw?si=o-Omi9TXtqY-ptvV&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div id="text" class="scale-up-center w-10/12 mx-auto pt-24 pb-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quam natus adipisci unde eius laudantium ut beatae reprehenderit non assumenda est sit laboriosam asperiores enim, ea consequatur ratione placeat officiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ea quasi hic tempore recusandae, reprehenderit eligendi eveniet cupiditate temporibus ratione, sequi exercitationem repudiandae pariatur iure. Quam eaque rerum aliquam consequuntur!</p>
+        </div>
+    </section>
+
+    <canvas id="canvas" class="absolute top-0 h-screen w-full z-10 cursor-pointer"></canvas>
+    <script src="./public/script.js"></script>
   </body>
 </html>
