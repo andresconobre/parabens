@@ -31,6 +31,7 @@ button.addEventListener("click", () => {
   buttonSection.classList.add("hidden");
   mainSection.classList.remove("hidden");
   setConfetti()
+  setInterval(setConfetti, 2500)
   audio.volume = 0.2
   audio.play()
   audio.loop = true
