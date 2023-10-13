@@ -12,7 +12,7 @@ const setConfetti = () => {
   });
 };
 
-let nomes = "Salache e Gabrieh";
+let nomes = "Nicolas";
 const titleText = "Parabéns " + nomes;
 
 function setTitle() {
